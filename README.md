@@ -68,3 +68,14 @@ OUTLOOK_REDIRECT_URI=http://localhost:3000/auth/outlook/callback
 ```
 npm start 
 ```
+
+## Uses
+
+1. Hit the url in your browser: 
+```
+http://localhost:3000/auth/google
+```
+2. It will log you in and ask for permissions to read, modify and send emails on your behalf **give all permission**
+
+3. Send email to this logged in email account from any other account and it will categorize the email in one of 3 categories mentioned above and **Replies to sender email with AI generated response**.
+
