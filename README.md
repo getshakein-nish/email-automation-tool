@@ -21,3 +21,50 @@ Allows sending reply emails to the user who sent the email to the given account.
 
 ### AI-Powered Responses
 Suggests appropriate responses based on email content and sends replies to the sender.
+
+# Getting started
+
+## Installation
+1. Clone this repository:
+```
+git clone https://github.com/getshakein-nish/email-automation-tool.git
+cd email-automation-tool
+
+```
+
+2. Download required packages:
+```
+npm install
+
+```
+
+3. Set up OAuth credentials:
+
+For Google: Set up OAuth credentials in Google cloud Console.
+For Outlook: Register your app in Azure.
+
+
+4. Create a .env file in the parent folder and add this:
+
+```
+# Gmail API
+GOOGLE_CLIENT_ID=<your-gmail-client-id>
+GOOGLE_CLIENT_SECRET=<your-gmail-client-secret>
+GOOGLE_REDIRECT_URI=http://localhost:3000/auth/google/callback
+
+*Used Gemini API because OpenAI API requires credit card*
+GEMINI_API_KEY= <your-gemini-api-key>
+
+
+# Outlook API
+OUTLOOK_CLIENT_ID=<your-outlook-client-id>
+OUTLOOK_CLIENT_SECRET=<your-outlook-client-secret>
+OUTLOOK_REDIRECT_URI=http://localhost:3000/auth/outlook/callback
+
+```
+
+5. Run the tool:
+
+```
+npm start 
+```
